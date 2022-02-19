@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Password Visibility</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form method="post">
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" />
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </p>
+            <button type="submit" id="submit" class="submit">Log In</button>
+        </form>
+    </div>
+    <script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+
+
+            this.classList.toggle("bi-eye");
+        });
+
+
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>Disable/enable the form submit button</title>
+</head>
+<body>
+<input id="accept" name="accept" type="checkbox" value="y"/>I accept<br>
+<input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+</body>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>Scroll to the top of the page with jQuery</title>
+</head>
+<body>
+  <p>Daniil/p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+  <p>Daniil</p>
+<a href='#top'>Go Top</a>
+</body>
+<head>
+<title>jQuery Setting background-image CSS Property</title>
+<style>
+    .box{
+        width: 500px;
+        height: 300px;
+        border: 5px solid #333;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("button").click(function(){
+        var imageUrl = "images/sky.jpg";
+        $(".box").css("background-image", "url(" + imageUrl + ")");
+    });
+});
+</script>
+</head>
+<body>
+    <div class="box"></div>
+    <p><button type="button">Set Background Image</button></p>
+</body>
+<body>
+<form>
+<label>Maximum n characters</label>
+<textarea id="textarea" maxlength="n"></textarea>
+<span id="anyid">15</span> characters remaining
+</form>
+</body>
+<body>
+<p> Click this paragraph to see it fade.</p>
+</body>
+<body>
+<button id="btn1">Animate height & width</button>
+<button id="btn2">Reset</button>
+<div id="box" style="background:itsuptoyou;height:100px;width:100px;margin:6px;"></div>
+</body>
+</html>
